@@ -14,10 +14,10 @@ function makeGrid() {
 
   grid.innerHTML = '';
 
- for (var i = 0, i < getRows, i++) {
+ for (var i = 0; i < getRows; i++) {
   var tableRow = grid.insertRow(0);
 
- for (var x = 0, x < getCols, x++) {
+ for (var x = 0; x < getCols; x++) {
   var tableData = tableRow.insertCell(0);
   tableData.setAttribute("cell", x + 1 + ", " + (i+1));
 };
@@ -26,9 +26,12 @@ function makeGrid() {
     var colorPicker = document.getElementById("colorPicker").value;
     this.style.backgroundColor = colorPicker;
     event.preventDefault();
-  });
+   });
+  };
+ }
+}
 
-  const button = document.getElementById("submit");
+  var button = document.getElementById("inputSubmit");
   button.addEventListener("click", function(event){
     event.preventDefault();  
     makeGrid();
