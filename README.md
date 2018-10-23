@@ -14,4 +14,4 @@
 <ol>
   <li>Clone or download the repository to your machine.</li>
   <li>Extract the .zip file</li>
-  <li>Open the .html file to play</li>
+  <li>Open index.html to play</li>
